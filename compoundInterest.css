@@ -1,0 +1,56 @@
+body {
+  background-image: linear-gradient(
+    rgba(0, 0, 255, 0.5),
+    rgba(255, 255, 0, 0.5)
+  );
+
+  text-align: center;
+  height: 100vh;
+  margin: 0px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  display: flex;
+  height: 100vh;
+  flex-direction: column; /* This aligns everything in a column*/
+  justify-content: space-between; /* Put everything at the verytop and bottom */
+  /*display: flex; /*lines up everything from left to right. */
+  grid-template-rows: 50px, auto, 1.5rem;
+  transition: opacity 5s;
+  transition-delay: 15s;
+}
+body:hover {
+  opacity: 0;
+}
+h1,
+footer {
+  background-color: black;
+}
+h1 {
+  font-family: Avenir;
+  color: white;
+  padding: 12px;
+  margin: 0;
+  text-shadow: 2px 2px 3px yellow;
+  text-align: center;
+}
+:hover {
+  transition: opaque 0;
+}
+footer {
+  font-style: italic;
+  color: white;
+  display: flex;
+}
+
+input {
+  border: 2px solid black;
+}
+#image {
+  position: absolute;
+  top: 20%;
+  left: 70%;
+  width: 22%;
+  margin: 0;
+  text-align: center;
+  transform: skew(0deg, 5deg);
+}
